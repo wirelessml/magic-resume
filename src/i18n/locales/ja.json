@@ -1,0 +1,810 @@
+{
+  "common": {
+    "title": "Magic Resume",
+    "subtitle": "AIドリブンの履歴書エディタ",
+    "description": "Magic Resume はオープンソースの履歴書エディタです。完全無料・プライバシーファースト。登録不要で、すべてのデータはローカルに保存されます。バックアップとエクスポートにも対応し、あなたの履歴書データをいつでも利用可能な状態に保ちます。",
+    "dashboard": "ダッシュボード",
+    "edit": "編集",
+    "delete": "削除",
+    "newResume": "新規履歴書",
+    "copy": "コピー",
+    "cancel": "キャンセル",
+    "confirm": "確定",
+    "deleteSuccess": "削除しました",
+    "deleteModuleConfirm": "このモジュールを削除してもよろしいですか？この操作は取り消せません。",
+    "configured": "設定済み",
+    "notConfigured": "未設定"
+  },
+  "home": {
+    "header": {
+      "title": "Magic Resume",
+      "startButton": "はじめる",
+      "features": "機能",
+      "pricing": "料金",
+      "about": "概要",
+      "login": "ログイン",
+      "register": "新規登録",
+      "dashboard": "ダッシュボード"
+    },
+    "hero": {
+      "badge": "スマート履歴書作成",
+      "title": "履歴書づくりを、もっとシンプルに、もっとスマートに",
+      "subtitle": "Magic Resume は AI 技術を活用して、プロフェッショナルな履歴書を素早く作成できます。登録不要・無料で利用でき、データはすべて安全に保管されます。",
+      "cta": "はじめる",
+      "secondary": "テンプレートを見る"
+    },
+    "features": {
+      "title": "なぜ Magic Resume なのか？",
+      "subtitle": "オールインワンの履歴書ソリューションで、転職活動をよりスムーズに",
+      "ai": {
+        "badge": "AI スマートチェック",
+        "title": "高精度な検出と、プロフェッショナルな提案",
+        "description": "AI による文法チェックを内蔵。不適切な表現を自動で検出し、プロが書いたような修正案を提示します。あなたの履歴書をワンランク上に引き上げます。",
+        "item1": "インテリジェントな文章改善",
+        "item1_description": "AI が表現を自動で最適化し、より洗練された履歴書に",
+        "item2": "文法チェック",
+        "item2_description": "文法ミスやスペルミスを自動検出して修正"
+      },
+      "storage": {
+        "badge": "ローカル保存",
+        "title": "データを守る、プライバシーを守る",
+        "description": "すべての履歴書データはローカルに保存されるため、情報漏洩の心配がありません。エクスポートによるバックアップにも対応し、いつでも履歴書を取り出せます。",
+        "item1": "ローカルファイル保存",
+        "item1_description": "履歴書データはあなたの PC のディスクに安全に保存されます",
+        "item2": "複数のエクスポート形式",
+        "item2_description": "PDF・JSON 形式でのエクスポートに対応",
+        "item3": "データのエクスポート＆バックアップに対応"
+      },
+      "preview": {
+        "badge": "リアルタイムプレビュー",
+        "title": "見たまま、そのまま",
+        "item1": "編集内容をリアルタイムでプレビュー",
+        "item2": "複数のエクスポート形式に対応"
+      }
+    },
+    "news": {
+      "label": "お知らせ",
+      "content": "新機能：AI 履歴書ブラッシュアップ機能をリリースしました"
+    },
+    "footer": {
+      "copyright": " 2025 Magic Resume. All rights reserved."
+    },
+    "changelog": "更新履歴",
+    "cta": {
+      "title": "新しいキャリアの第一歩を、いま",
+      "description": "Magic Resume で、印象に残る履歴書を作りましょう",
+      "button": "無料ではじめる"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "items": [
+        {
+          "question": "Magic Resume は無料で使えますか？",
+          "answer": "Magic Resume は現在無料で提供されており、基本的な履歴書作成のニーズを満たします。オープンソース版の機能は今後も維持されます。"
+        },
+        {
+          "question": "履歴書のデータは安全ですか？",
+          "answer": "はい、非常に安全です。Magic Resume はローカルストレージを使用しており、すべてのデータはお使いの端末内にのみ保存されます。クラウドには一切送信されないため、プライバシーは完全に保護されます。"
+        },
+        {
+          "question": "対応しているエクスポート形式は？",
+          "answer": "現時点では PDF エクスポートに対応しており、どの端末でも崩れない統一されたレイアウトでお届けします。今後さらに多くの形式に対応する予定です。"
+        },
+        {
+          "question": "複数のデバイス間で同期できますか？",
+          "answer": "JSON 形式での設定エクスポートに対応しています。履歴書設定を JSON として保存しておけば、いつでもどこでもどの端末でも復元可能です。"
+        },
+        {
+          "question": "カスタマイズの自由度はどのくらい？",
+          "answer": "色・レイアウトをはじめ、豊富なカスタマイズオプションを用意しています。個人の好みや業界の慣習に合わせて、履歴書のスタイルを自由に調整できます。"
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "appName": "Magic Resume",
+      "resumes": "履歴書",
+      "settings": "設定",
+      "templates": "テンプレート",
+      "ai": "AI 設定"
+    },
+    "resumes": {
+      "created": "作成日時",
+      "synced": "同期済みファイル",
+      "view": "表示",
+      "myResume": "マイ履歴書",
+      "create": "履歴書を作成",
+      "newResume": "新規履歴書",
+      "newResumeDescription": "新しい履歴書を作成して始めましょう。",
+      "import": "履歴書をインポート",
+      "untitled": "無題の履歴書",
+      "importSuccess": "設定をインポートしました",
+      "importError": "インポートに失敗しました。ファイル形式をご確認ください",
+      "importDialog": {
+        "title": "履歴書をインポート",
+        "jsonTitle": "JSON をインポート",
+        "jsonDescription": "エクスポート済みの履歴書設定ファイル (.json) をインポートします",
+        "pdfTitle": "PDF をインポート",
+        "pdfDescription": "Gemini を使って構造化された履歴書データに変換します",
+        "importing": "インポート中です。しばらくお待ちください...",
+        "geminiConfigRequired": "先に AI 設定で Gemini API キーとモデル ID を設定してください",
+        "pdfSuccess": "PDF をインポートしました",
+        "pdfError": "PDF のインポートに失敗しました。PDF の内容または Gemini の設定をご確認ください"
+      },
+      "notice": {
+        "title": "ご注意",
+        "description": "ブラウザのキャッシュ削除でデータが失われないよう、設定でバックアップフォルダを指定することをおすすめします",
+        "goToSettings": "設定へ移動"
+      },
+      "deleteConfirmTitle": "履歴書を削除しますか？",
+      "deleteConfirmDescription": "この操作は取り消せません。この履歴書は完全に削除され、端末からデータも消去されます。",
+      "createDialog": {
+        "title": "新しい履歴書を作成",
+        "description": "空のテンプレートから新しい履歴書を始めます",
+        "tabs": {
+          "fromTemplate": "テンプレートから",
+          "uploadFile": "ファイルをアップロード"
+        },
+        "namePlaceholder": "名前",
+        "switchTemplate": "テンプレートを切り替え",
+        "cancel": "キャンセル",
+        "create": "作成",
+        "blankTitle": "空の履歴書",
+        "startFromBlank": "空白から始める",
+        "startFromTemplate": "テンプレートから始める",
+        "blankCardDescription": "デフォルトのレイアウトを使って、ゼロから作り上げます。",
+        "blankThumbnailDescription": "真っ白なページから、コードドリブンで自由に履歴書を組み立てます。",
+        "createNow": "今すぐ作成",
+        "backToGrid": "テンプレート一覧に戻る",
+        "blankPreviewDescription": "プリセットの制約なく、空のページから自由にすべてを構築します。",
+        "useThisTemplate": "このテンプレートを使う",
+        "sample": {
+          "company": "Google",
+          "position": "シニアソフトウェアエンジニア",
+          "present": "現在",
+          "workDescription": "フロントエンドチームを率い、ページパフォーマンスを 40% 改善。"
+        }
+      }
+    },
+    "settings": {
+      "title": "設定",
+      "syncDirectory": {
+        "title": "同期フォルダ",
+        "description": "履歴書を同期・バックアップするフォルダを選択します。",
+        "currentSyncFolder": "現在の同期フォルダ",
+        "noFolderConfigured": "フォルダが未設定です",
+        "changeFolder": "フォルダを変更",
+        "selectFolder": "フォルダを選択"
+      },
+      "sync": {
+        "title": "同期フォルダ",
+        "description": "履歴書を同期・バックアップするフォルダを選択します。",
+        "select": "フォルダを選択"
+      },
+      "ai": {
+        "title": "AI 設定",
+        "currentModel": "現在のモデル",
+        "selectModel": "モデルを選択",
+        "getApiKey": "API キーを取得",
+        "doubao": {
+          "title": "Doubao",
+          "description": "火山引擎 (Volcengine) で API キーを取得",
+          "apiKey": "Doubao API キー",
+          "modelId": "モデル ID"
+        },
+        "deepseek": {
+          "title": "DeepSeek",
+          "description": "DeepSeek プラットフォームで API キーを取得",
+          "apiKey": "DeepSeek API キー"
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "OpenAI または OpenAI 互換のプラットフォームで API キーを取得します",
+          "apiKey": "OpenAI API キー",
+          "modelId": "モデル ID",
+          "apiEndpoint": "API エンドポイント (例: https://openai.example.org/v1)"
+        },
+        "gemini": {
+          "title": "Gemini",
+          "description": "ブラッシュアップ・文法チェック・PDF 画像履歴書のインポートに対応。推奨モデル: gemini-flash-latest",
+          "apiKey": "Gemini API キー",
+          "modelId": "Gemini モデル ID"
+        }
+      }
+    },
+    "templates": {
+      "title": "テンプレート",
+      "useTemplate": "このテンプレートを使う",
+      "preview": "プレビュー",
+      "switchTemplate": "テンプレートを切り替え",
+      "classic": {
+        "name": "クラシック",
+        "description": "オーソドックスでミニマルなレイアウト。ほとんどの応募シーンに対応"
+      },
+      "modern": {
+        "name": "2カラム",
+        "description": "クラシックな2カラム構成で、個性をしっかりアピール"
+      },
+      "leftRight": {
+        "name": "セクション見出し背景",
+        "description": "セクション見出しに背景色をつけ、メリハリのあるデザインに"
+      },
+      "timeline": {
+        "name": "タイムライン",
+        "description": "時系列を強調するタイムライン型レイアウト"
+      },
+      "minimalist": {
+        "name": "ミニマリスト",
+        "description": "余白をたっぷりとった、すっきり清潔感のあるスタイル"
+      },
+
+      "elegant": {
+        "name": "エレガント",
+        "description": "中央寄せの見出しを採用したシングルカラム。上品な印象に"
+      },
+      "creative": {
+        "name": "クリエイティブ",
+        "description": "視覚的コントラストを活かした、鮮やかで個性派のデザイン"
+      },
+      "editorial": {
+        "name": "エディトリアル",
+        "description": "大胆なセリフ体と洗練されたサンセリフ体を融合した、上質な誌面風"
+      }
+    }
+  },
+  "pdfExport": {
+    "button": {
+      "export": "エクスポート",
+      "exportPdf": "PDF エクスポート (サーバー)",
+      "exportJson": "JSON 設定をエクスポート",
+      "exportMarkdown": "Markdown をエクスポート",
+      "exporting": "エクスポート中...",
+      "exportingJson": "エクスポート中...",
+      "exportingMarkdown": "エクスポート中...",
+      "print": "ブラウザで印刷"
+    },
+    "toast": {
+      "success": "PDF をエクスポートしました",
+      "error": "PDF のエクスポートに失敗しました",
+      "jsonSuccess": "設定をエクスポートしました",
+      "jsonError": "設定のエクスポートに失敗しました",
+      "markdownSuccess": "Markdown をエクスポートしました",
+      "markdownError": "Markdown のエクスポートに失敗しました"
+    }
+  },
+  "previewDock": {
+    "switchTemplate": "テンプレートを切り替え",
+    "grammarCheck": {
+      "idle": "AI 文法チェック",
+      "checking": "チェック中...",
+      "configurePrompt": "AI モデルを設定してください",
+      "configureButton": "設定する",
+      "errorToast": "文法チェックに失敗しました。もう一度お試しください"
+    },
+    "sidePanel": {
+      "expand": "サイドパネルを展開",
+      "collapse": "サイドパネルを折りたたむ"
+    },
+    "editPanel": {
+      "expand": "編集パネルを展開",
+      "collapse": "編集パネルを折りたたむ"
+    },
+    "previewPanel": {
+      "expand": "プレビューパネルを展開",
+      "collapse": "プレビューパネルを折りたたむ"
+    },
+    "github": "GitHub",
+    "backToDashboard": "ダッシュボードに戻る",
+    "copyResume": {
+      "tooltip": "履歴書をコピー",
+      "success": "履歴書をコピーしました",
+      "error": "履歴書のコピーに失敗しました"
+    },
+    "export": {
+      "tooltip": "履歴書をエクスポート",
+      "pdf": "PDF をエクスポート",
+      "json": "JSON をエクスポート",
+      "markdown": "Markdown をエクスポート",
+      "print": "印刷"
+    },
+    "autoOnePage": {
+      "tooltip": "1 ページに自動フィット",
+      "enabled": "1 ページモードを有効にしました",
+      "disabled": "1 ページモードを無効にしました",
+      "cannotFit": "内容が多すぎます。可能な限り最適化しましたが、1 ページに収まりませんでした。内容を整理するか、サイドバーで余白やフォントサイズを調整してください。"
+    },
+    "backup": {
+      "configured": "バックアップ設定済み",
+      "notConfigured": "バックアップ未設定",
+      "clickToConfigure": "クリックして設定"
+    }
+  },
+  "workbench": {
+    "sidePanel": {
+      "layout": {
+        "title": "レイアウト",
+        "addCustomSection": "モジュールを追加",
+        "addCustomSectionOption": "カスタムセクションを追加",
+        "standardSections": {
+          "skills": "スキル",
+          "experience": "職歴",
+          "projects": "プロジェクト",
+          "education": "学歴",
+          "selfEvaluation": "自己PR",
+          "certificates": "資格"
+        }
+      },
+      "theme": {
+        "title": "テーマカラー",
+        "custom": "カスタム"
+      },
+      "typography": {
+        "title": "タイポグラフィ",
+        "font": {
+          "title": "フォント",
+          "alibaba": "Alibaba PuHuiTi",
+          "misans": "MiSans",
+          "notosanssc": "Noto Sans SC",
+          "sourcehanserifsc": "Source Han Serif SC",
+          "note": "MiSans は無償商用利用ライセンスのもと使用しています。本プロジェクトを再配布する際は MiSans のクレジット表記を保持してください。"
+        },
+        "lineHeight": {
+          "title": "行の高さ",
+          "normal": "標準",
+          "relaxed": "ゆったり",
+          "loose": "広め"
+        },
+        "baseFontSize": {
+          "title": "基本フォントサイズ"
+        },
+        "headerSize": {
+          "title": "セクション見出しサイズ"
+        },
+        "subheaderSize": {
+          "title": "サブセクション見出しサイズ"
+        }
+      },
+      "spacing": {
+        "title": "余白",
+        "pagePadding": {
+          "title": "ページの余白"
+        },
+        "sectionSpacing": {
+          "title": "セクション間の間隔"
+        },
+        "paragraphSpacing": {
+          "title": "段落の間隔"
+        }
+      },
+      "mode": {
+        "title": "モード",
+        "useIconMode": {
+          "title": "アイコンモード"
+        },
+        "centerSubtitle": {
+          "title": "サブタイトルを中央揃え"
+        },
+        "flexibleHeaderLayout": {
+          "title": "長いタイトル"
+        }
+      }
+    },
+    "basicPanel": {
+      "title": "プロフィール",
+      "avatar": "顔写真",
+      "basicField": "基本情報",
+      "customField": "カスタム",
+      "layout": "配置",
+      "customFields": {
+        "placeholders": {
+          "label": "ラベル",
+          "value": "値"
+        },
+        "displayLabel": "ラベルを表示",
+        "addButton": "カスタム項目を追加"
+      },
+      "basicFields": {
+        "name": "氏名",
+        "title": "肩書き",
+        "email": "メールアドレス",
+        "phone": "電話番号",
+        "website": "ウェブサイト",
+        "location": "所在地",
+        "birthDate": "生年月日",
+        "employementStatus": "就業状況"
+      },
+      "fieldVisibility": {
+        "show": "表示",
+        "hide": "非表示"
+      },
+      "githubContributions": "GitHub コントリビューション"
+    },
+    "experiencePanel": {
+      "title": "職歴",
+      "addButton": "職歴を追加",
+      "defaultProject": {
+        "company": "株式会社テックカンパニー",
+        "position": "シニアフロントエンドエンジニア",
+        "date": "2020 - 現在",
+        "details": "コアプロダクトの開発を担当..."
+      },
+      "placeholders": {
+        "company": "会社名",
+        "position": "役職",
+        "date": "在籍期間",
+        "details": "業務内容と成果"
+      }
+    },
+    "experienceItem": {
+      "labels": {
+        "company": "会社名",
+        "position": "役職",
+        "date": "在籍期間",
+        "details": "業務内容"
+      },
+      "placeholders": {
+        "company": "会社名を入力",
+        "position": "例: フロントエンドエンジニア",
+        "date": "例: 2020 - 現在",
+        "details": "この役職で担当した業務と達成した成果を記入"
+      },
+      "buttons": {
+        "edit": "編集",
+        "save": "保存",
+        "cancel": "キャンセル",
+        "delete": "削除"
+      },
+      "visibility": {
+        "show": "表示",
+        "hide": "非表示"
+      }
+    },
+    "projectPanel": {
+      "title": "プロジェクト経験",
+      "addButton": "プロジェクトを追加",
+      "defaultProject": {
+        "name": "個人プロジェクト",
+        "description": "プロジェクトの説明",
+        "role": "担当した役割",
+        "date": "2023.01 - 2023.06"
+      },
+      "placeholders": {
+        "name": "プロジェクト名",
+        "description": "プロジェクトの背景と目的を簡潔に",
+        "role": "プロジェクト内での役割と担当範囲",
+        "date": "プロジェクト期間",
+        "link": "プロジェクトのリンク"
+      }
+    },
+    "projectItem": {
+      "labels": {
+        "name": "プロジェクト名",
+        "role": "役割",
+        "date": "期間",
+        "description": "プロジェクト概要",
+        "technologies": "使用技術",
+        "link": "プロジェクトリンク",
+        "linkLabel": "表示テキスト"
+      },
+      "placeholders": {
+        "name": "プロジェクト名を入力",
+        "role": "プロジェクト内での役割",
+        "date": "プロジェクト期間",
+        "description": "プロジェクトの背景と目的を簡潔に",
+        "technologies": "使用した技術・ツール",
+        "link": "プロジェクトのリンク",
+        "linkLabel": "表示テキスト"
+      },
+      "hints": {
+        "linkLabel": "表示テキストが空の場合、ドメインまたは URL 全体を自動表示します。http:// と https:// のリンクのみ対応。"
+      },
+      "buttons": {
+        "edit": "編集",
+        "save": "保存",
+        "cancel": "キャンセル",
+        "delete": "削除"
+      },
+      "visibility": {
+        "show": "表示",
+        "hide": "非表示"
+      }
+    },
+    "educationPanel": {
+      "title": "学歴",
+      "addButton": "学歴を追加",
+      "defaultProject": {
+        "school": "学校名",
+        "degree": "学位",
+        "major": "専攻",
+        "date": "2020.04 - 2024.03"
+      },
+      "placeholders": {
+        "school": "学校名を入力",
+        "degree": "学位を選択",
+        "major": "専攻を入力",
+        "date": "在学期間を入力"
+      }
+    },
+    "educationItem": {
+      "labels": {
+        "school": "学校名",
+        "degree": "学位",
+        "major": "専攻",
+        "date": "在学期間",
+        "description": "備考",
+        "gpa": "GPA",
+        "location": "所在地",
+        "startDate": "入学日",
+        "endDate": "卒業日"
+      },
+      "placeholders": {
+        "school": "学校名を入力",
+        "degree": "学位を選択",
+        "major": "専攻を入力",
+        "date": "在学期間を入力",
+        "description": "学校に関する備考を入力",
+        "gpa": "GPA を入力",
+        "location": "所在地を入力"
+      },
+      "buttons": {
+        "edit": "編集",
+        "save": "保存",
+        "cancel": "キャンセル",
+        "delete": "削除"
+      },
+      "visibility": {
+        "show": "表示",
+        "hide": "非表示"
+      }
+    },
+    "certificatesPanel": {
+      "title": "資格・証明書",
+      "addButton": "資格を追加",
+      "tips": "画像をアップロード、または貼り付け (Cmd/Ctrl + V) で追加できます。横並びにする場合は幅の比率を調整してください。",
+      "width": "幅 (%)",
+      "delete": "削除",
+      "empty": "画像がありません。アップロードまたは貼り付けで追加してください。"
+    }
+  },
+  "field": {
+    "selectDate": "日付を選択",
+    "enterYear": "年を入力",
+    "toPresent": "現在に至る"
+  },
+  "richEditor": {
+    "bold": "太字",
+    "italic": "斜体",
+    "underline": "下線",
+    "link": "リンク",
+    "linkPlaceholder": "URL を入力 (例: https://example.com)",
+    "linkApply": "適用",
+    "linkRemove": "削除",
+    "linkInvalid": "有効な URL を入力してください",
+    "textColor": "文字色",
+    "backgroundColor": "背景色",
+    "alignLeft": "左揃え",
+    "alignCenter": "中央揃え",
+    "alignRight": "右揃え",
+    "alignJustify": "両端揃え",
+    "bulletList": "箇条書き",
+    "orderedList": "番号付きリスト",
+    "undo": "元に戻す",
+    "redo": "やり直し",
+    "aiPolish": "AI ブラッシュアップ",
+    "paragraph": "段落",
+    "heading1": "見出し 1",
+    "heading2": "見出し 2",
+    "heading3": "見出し 3",
+    "colors": {
+      "black": "ブラック",
+      "darkGray": "ダークグレー",
+      "gray": "グレー",
+      "red": "レッド",
+      "orange": "オレンジ",
+      "orangeYellow": "オレンジイエロー",
+      "yellow": "イエロー",
+      "yellowGreen": "イエローグリーン",
+      "green": "グリーン",
+      "cyan": "シアン",
+      "lightBlue": "ライトブルー",
+      "blue": "ブルー",
+      "purple": "パープル",
+      "magenta": "マゼンタ",
+      "pink": "ピンク"
+    }
+  },
+  "iconSelector": {
+    "all": "すべて",
+    "searchPlaceholder": "アイコンを検索...",
+    "noMatchingIcons": "一致するアイコンがありません",
+    "tryOtherKeywords": "別のキーワードで検索してください",
+    "selectOtherCategory": "別のカテゴリを選択してください",
+    "categories": {
+      "personal": "個人情報",
+      "education": "学歴",
+      "experience": "職歴",
+      "skills": "スキル",
+      "languages": "言語",
+      "projects": "プロジェクト",
+      "achievements": "実績",
+      "hobbies": "趣味",
+      "social": "ソーシャル",
+      "others": "その他"
+    },
+    "icons": {
+      "user": "ユーザー",
+      "email": "メール",
+      "phone": "電話",
+      "address": "住所",
+      "website": "ウェブサイト",
+      "mobile": "携帯",
+      "education": "学歴",
+      "school": "学校",
+      "major": "専攻",
+      "library": "図書館",
+      "scholarship": "奨学金",
+      "work": "仕事",
+      "company": "会社",
+      "office": "オフィス",
+      "dateRange": "期間",
+      "workTime": "勤務時間",
+      "programming": "プログラミング",
+      "system": "システム",
+      "database": "データベース",
+      "terminal": "ターミナル",
+      "techStack": "技術スタック",
+      "language": "言語",
+      "speaking": "スピーキング",
+      "communication": "コミュニケーション",
+      "project": "プロジェクト",
+      "branch": "ブランチ",
+      "release": "リリース",
+      "target": "目標",
+      "trophy": "トロフィー",
+      "medal": "メダル",
+      "star": "スター",
+      "interest": "趣味",
+      "music": "音楽",
+      "art": "アート",
+      "photography": "写真",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "profile": "プロフィール",
+      "review": "レビュー",
+      "filter": "フィルター",
+      "link": "リンク",
+      "salary": "給与",
+      "idea": "アイデア",
+      "send": "送信",
+      "share": "共有",
+      "settings": "設定",
+      "search": "検索",
+      "flag": "フラグ",
+      "bookmark": "ブックマーク",
+      "thumbsUp": "いいね",
+      "skill": "スキル"
+    }
+  },
+  "aiPolishDialog": {
+    "title": "AI ブラッシュアップ",
+    "description": {
+      "ready": "任意の指示を入力して「ブラッシュアップ開始」をクリック",
+      "polishing": "コンテンツをブラッシュアップ中...",
+      "finished": "コンテンツを最適化しました。結果をご確認ください"
+    },
+    "error": {
+      "configRequired": "先に AI モデルを設定してください",
+      "polishFailed": "ブラッシュアップに失敗しました",
+      "applied": "ブラッシュアップ内容を適用しました"
+    },
+    "content": {
+      "original": "元の内容",
+      "polished": "ブラッシュアップ後"
+    },
+    "customInstructions": "カスタム指示",
+    "customInstructionsPlaceholder": "例: 専門用語を増やす / 数値を強調する / 文体をフォーマルに保つ ... (任意)",
+    "button": {
+      "start": "ブラッシュアップ開始",
+      "regenerate": "再生成",
+      "generating": "生成中...",
+      "apply": "適用する"
+    }
+  },
+  "photoConfig": {
+    "title": "写真設定",
+    "description": "履歴書の写真をカスタマイズ",
+    "upload": {
+      "title": "オンラインリンク",
+      "dragHint": "画像をドラッグ＆ドロップ、またはクリックでアップロード",
+      "sizeLimit": "画像サイズは 2MB 以内にしてください",
+      "typeLimit": "画像ファイルをアップロードしてください",
+      "urlPlaceholder": "画像のリンクを入力",
+      "invalidUrl": "無効な画像 URL またはアクセス不可です。別のリンクをお試しください",
+      "timeout": "読み込みタイムアウト",
+      "loadError": "画像の読み込みに失敗しました"
+    },
+    "config": {
+      "aspectRatio": "アスペクト比",
+      "size": "サイズ",
+      "width": "幅",
+      "height": "高さ",
+      "border-radius": "角の丸み",
+      "widthPlaceholder": "幅",
+      "heightPlaceholder": "高さ",
+      "ratios": {
+        "1:1": "1:1 正方形",
+        "4:3": "4:3 横長",
+        "3:4": "3:4 縦長",
+        "16:9": "16:9 ワイド",
+        "custom": "カスタム"
+      },
+      "borderRadius": {
+        "none": "なし",
+        "medium": "中",
+        "full": "円形",
+        "custom": "カスタム",
+        "customPlaceholder": "角の丸みをカスタム指定"
+      }
+    },
+    "actions": {
+      "reset": "リセット",
+      "close": "閉じる",
+      "cancel": "キャンセル",
+      "removePhoto": "写真を削除"
+    }
+  },
+  "templates": {
+    "switchTemplate": "テンプレートを切り替え"
+  },
+  "themeModal": {
+    "delete": {
+      "title": "削除の確認",
+      "description": "{title} を削除してもよろしいですか？",
+      "confirmText": "削除",
+      "cancelText": "キャンセル"
+    }
+  },
+  "grammarCheck": {
+    "title": "AI 文法チェック",
+    "description": "{count} 件の提案が見つかりました",
+    "exit": "終了",
+    "spelling": "スペル",
+    "punctuation": "句読点",
+    "original": "元の表現",
+    "error_point": "誤り",
+    "suggestion": "提案",
+    "reason": "理由",
+    "accept": "適用",
+    "ignore": "無視",
+    "found_issues": "{count} 件の問題が見つかりました",
+    "applied_success": "変更を適用しました",
+    "apply_error": "テキストが見つからず、自動適用できませんでした",
+    "no_errors_title": "完璧です！",
+    "no_errors_desc": "文法・句読点の誤りは見つかりませんでした。"
+  },
+  "faqDialog": {
+    "title": "よくある質問 (FAQ)",
+    "description": "Magic Resume ワークベンチに関するヒントと解決策。",
+    "items": {
+      "browser-compatibility": {
+        "question": "推奨ブラウザは？",
+        "answer": "レイアウトとエクスポートを最良の状態で利用するため、最新版の Chrome または Edge を推奨します。古いブラウザではスタイル崩れが発生する場合があります。"
+      },
+      "export-failure": {
+        "question": "エクスポートが失敗したり、スタイルが崩れる場合は？",
+        "answer": "1. Google Chrome (https://www.google.com/intl/ja/chrome/) のご利用を推奨します。\n2. それでも失敗する場合は「シークレットモード」で試し、拡張機能の干渉を排除してください。\n3. それでも解決しない場合は、エクスポートメニューから「PDF (バックアップ)」を選び、印刷ダイアログで「PDF として保存」を選択してください。"
+      },
+      "export-methods": {
+        "question": "2 つのエクスポート方法の違いは？",
+        "answer": "• PDF エクスポート: バックエンドで高精度にレンダリングし、レイアウトを 100% 再現します。採用担当者への正式提出に推奨。\n\n• ブラウザ印刷: 現在のブラウザの標準印刷機能 (PDF として保存) を呼び出します。バックエンドのエクスポートが混雑している場合や、ブラウザ側で印刷余白を細かく調整したい場合に便利です。"
+      },
+      "drag-and-drop": {
+        "question": "モジュールをドラッグ＆ドロップで並び替えるには？",
+        "answer": "左の編集パネル「レイアウト」設定で、モジュールカード左側の「ドラッグハンドル」(通常は 6 つの点アイコン) にカーソルを合わせます。マウスの左ボタンを押したまま上下にドラッグすると、履歴書全体のセクション順を入れ替えできます。"
+      }
+    }
+  }
+}
